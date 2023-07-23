@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 天才你赛哥，人能话不多
-date: 2020-01-29 01:00 +0700
+date: 2023-07-29 01:00 +0700
 modified: 2020-03-07 16:49:47 +07:00
 description: Ada dua cara untuk memperbarui forked repository menggunakan web interface yang disediakan oleh github tapi ribet, atau melalui terminal yang lebih ribet lagi.
 tag:
