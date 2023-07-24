@@ -1,34 +1,24 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "学校是真地狱啊"
 date:   2020-08-29 09:29:20 +0700
 categories: jekyll update
 usemathjax: true
 ---
 
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+为什么说学校是真地狱：
 
+第一，学校里面的人互相攀比，互相竞争，把原本和谐的关系分裂，人与人之间互相嫉妒，谁也瞧不起谁。
 
-Jekyll requires blog post files to be named according to the following format:
+第二，老师校长独裁，不管对错，必须执行，舔着狗脸发布没有意义的命令。
 
-`YEAR-MONTH-DAY-title.MARKUP`
+第三，在这种弱智环境下，舔狗傻逼多，嫩多几把喜欢当舔狗的。
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+第四，学生也没有啥脑子，看谁强壮就听谁的，谁叫了嗓门大谁有理，一点脑子都没有，看人下菜碟，说啥都信，不如卖缅北。
 
-Jekyll also offers powerful support for code snippets:
+第五，学校傻逼是真的多啊，抢美女的，看帅哥的，赚钱就为了嫖娼了，天天想着有钱装逼了，考不好就哭了。
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+第六，反正学校这环境吧，无话可说，天才被排挤，猪头被夸奖，怪不得毕业就失业了，大傻哄小傻。
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-
+第七，装迷瞪，少玩游戏，少看美女就好了，啥事别放心上，实际上他们除了吓唬啥也不会，没有真正的权力。
