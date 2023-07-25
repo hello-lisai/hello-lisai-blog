@@ -1,64 +1,36 @@
 ---
-title: 豪孙几把是怎么断的
-date: 2018-09-28 09:45:47 +07:00
+title: 关于同性恋
+date: 2022-09-28 09:45:47 +07:00
 modified: 2019-08-29 09:24:47 +07:00
 tags: [boooo, netlify, jekyll, github]
 description: All the services are free, a source code this site placed on github repository and intergration with netlify service, another service that you can use is github page for hosting your own static site.
 ---
 
-The website was made using Jekyll the one of open source static sites generator, and using my own simple theme, I called [klisé](https://github.com/piharpi/klise).
+同性恋这个词在河南地区存在于影视之中，但是我从来没有碰见过真正的同性恋，我从同性恋的认识主要来自于一些美剧，那个片叫美国恐怖故事，美国为了出于某些正确，经常出境一些镜头。就比如说男同，女同，是的，现在想想我身边的一些人，真的有可能是男同或者女同。或者说他们是潜在的同性恋。
 
 <hr>
 
-All the services are free, source code the site was placed on my [github](https://github.com/piharpi/mahendrata.now.sh) repository and intergration with ~~[netlify](https://netlify.com)~~ service, another service that you can use is [github page](https://pages.github.com/) for hosting your own static site.
+据小道消息，男同大多存在于文科班，文科班其实就是女生非常多的班，男生很少，我也确实呆过文科班，但是让我说，艺术班的人也不少，他们玩的更花。我在艺术班经常见过女扮男装或者男扮女装的，我身边就有一些可能是男同或者女同的，中国对性之类的事根本没有教育，天天埋头读傻书，一说性就是靠，都是脏话，妓之类的。或者美色勾引，反正都是一些不好下流的词。
 
 <hr>
 
-#### Let's do this
+#### 以我见过的故事来说，一个人喜欢一个人有以下几种原因：
+  色，这个人单纯长的漂亮，性感
+  就是要征服这个人，挑战一些高难度的对象
+  玩玩这个人，享受把对方玩弄的感觉
+  贪财，想被保养
+  追求快乐，包括性快乐
+  一些更变态的欲望
 
-So, before we start create a site, you need some tools, you can self paced for how to installing each tools, on this guide i'm just want to show you how to install jekyll and deploying in netlify, but make sure you have each tools below.
+#### 原因猜想
 
-#### Prerequisites
+变态这个词一直都离我们每个人都非常近，变态不仅仅指色，他更像一个修饰词，比如说聪明的变态，细节到变态。这个社会确实比我想象的变态，如果没有新闻，我说世界有专门摘活人器官不打麻药，然后尸体直接扔袋子里，而且没有任何人管的这种事，绝对有人站出来说，不信，怎么可能，现在什么年代？这种见识少的人太多了，叫我说中国也够变态了，上学期间一天上将近十个小时，而且有时候周末不放假，也没有人质疑反对，这个弱智社会差不多没有救了，这种事多了。一些发达国家把性别分为很多种，加拿大好像有十种以上性别，他们性别的划分就是内心认为，就是你明明是男的，但是你认为自己是女的，在加拿大你就可以去女厕所。同性恋的本质叫我说，很大一部分的心里因素，比如说金星，他小时候就学跳舞，跳舞绝大部分都是女生，天天呆女生圈里，一个男生，能不变态？内心肯定认为自己是女生。所以他后来做了变性手术。
 
-Requirements before we doing magic show.
 
-- [Ruby](https://www.ruby-lang.org/en/downloads/) programming language
-- [Git](https://git-scm.com) (version control)
-- [Netlify](https://netlify.com) and [Github](https://github.com) account
-- [Bundler](https://bundler.io)
+#### 补充
 
-#### Installation
+人的心里基本上就是受环境影响，比如说，在中国这个环境，读书不好就是傻逼，不孝，全是贬低词。在美国要是说黑人的坏话，或者犹太人，就容易出事，如果被骂的人不告官也没事。环境很重要，可以说人基本上都是环境的产物。比如说嫩身边人都玩某个游戏，你就是不喜欢，也可能为了融入群体而玩。大家都聊某个明星，自己就是不知道，也会找个机会学习。这种事太多了。这个社会好起来很好，差起来也是没有止境的。
 
-First, you need some [SSG](https://www.staticgen.com/), there are many kind ssg, but in case i'm using Jekyll cause i'm already familiar with it, open your terminal and type command on below
+#### 林子大什么鸟都有
 
-```bash
-$ bundle install jekyll # installing jekyll in your machine
-$ jekyll new my-site && cd my-site # create new jekyll project
-$ jekyll s # run jekyll server
-```
-
-Now, jekyll is running on your local machine, open your browser and go to `localhost:4000` is default address from jekyll, press <kbd>CTRL</kbd> + <kbd>C</kbd> to stop the jekyll server.
-
-#### Adding remote repository
-
-Before we adding remote repository, you must have [github](https://github.com/new) repository, if already have repository, just add github remote address to your local folder, with the following commands
-
-```bash
-$ git init # initializing project folder
-$ git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git # change UPPERCASE with your own!
-$ git add -A && git commit -m "Initialize" && git push -u origin master # push code to github
-```
-
-Now check your github repository, make sure the files is uploaded correctly.
-
-#### Deploying to netlify
-
-Go [netlify](https://netlify.com) dashboard, and following this step.
-
-1. click `new site from git`, then choose `Github`.
-2. then choose your repository where is the jekyll sources uploaded.
-3. netlify smart enough to configuring, we just need's are hosting's are hosting's are hosting's are hosting to click `Deploy site button`.
-
-Wait for moment, and voila..! your site's are hosting and using `.netlify.com` tld, if your website wants to look professional, just buy a domain from your favorite domain store. or if you the first time, I advice using namecheap.com*(isn't sponsor)* \*based on my experienced it provides good service and have various TLDs.
-
-So, what you waiting for, just create your own website for free.
+人的心里问题一直都是最大的问题。
