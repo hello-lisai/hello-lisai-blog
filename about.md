@@ -6,9 +6,9 @@ excerpt: 你好，我是天才你赛哥，人能话不多，占卜爷最6，摆�
 comments: false
 ---
 
-天才你赛哥，人能话不多，没事爱摆烂，天天吃了睡。
+如果你有有任何需要，可以联系我，美女优先，土豪优先。
 
-**may u needs ✨**
+**也许你需要 ✨**
 
 - {{ site.author.email }}
-- github.com/{{ site.author.github }}
+
