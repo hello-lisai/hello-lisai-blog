@@ -2,6 +2,7 @@
 layout: post
 title:  "学校是真地狱啊"
 date:   2020-08-29 09:29:20 +0700
+tags: [哲学]
 categories: jekyll update
 usemathjax: true
 ---
