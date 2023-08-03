@@ -10,7 +10,6 @@
   url: /about/
   external: false # set true if you using external link, see below
 
-
  - title: 留言
    url: https://pl.lisai.link
    external: true
