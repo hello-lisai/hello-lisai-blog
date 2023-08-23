@@ -7,7 +7,7 @@ comments: false
 ---
 
 Thanks to :
-vercel;cloudflare;github;klise;youtubo;myself
+vercel;cloudflare;github;klise;youtube;myself
 <hr>
 Hopefully the knowledge that I got from them can be useful, and become a charity for them.
 如果你有什么想说的，[留言](https://pl.lisai.link)
