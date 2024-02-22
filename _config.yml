@@ -27,7 +27,7 @@ baseurl:
 permalink: /:title/
 google_analytics: # leave it blank if not wish
 fb_appid:
-link: "https://klise.now.sh" #
+
 
 # Collection setting
 collections:
@@ -61,6 +61,8 @@ jekyll_compose:
 
 # Homepage limit posts
 number_of_posts: 5
+linklink: 5
+
 
 # Build settings
 # theme: klise
