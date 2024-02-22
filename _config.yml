@@ -27,6 +27,7 @@ baseurl:
 permalink: /:title/
 google_analytics: # leave it blank if not wish
 fb_appid:
+link: "https://klise.now.sh" #
 
 # Collection setting
 collections:
