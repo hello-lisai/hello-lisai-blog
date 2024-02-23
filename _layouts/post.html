@@ -84,7 +84,7 @@ layout: compress
             const input1 = document.getElementById('input1').value;
             const input2 = document.getElementById('input2').value;
             //const pageTitle = "{{ page.title | escape }}";
-            const pageM = "{{ page.modified | date: "%d-%m-%Y" }}";
+            
 
             if (input1.trim() !== '' && input2.trim() !== '' && input1.length <= 50 && input2.length <= 50) {
                 fetch('https://jsonbase.gd972446.workers.dev/233', {
@@ -109,8 +109,7 @@ layout: compress
         
 <script>
   function fetchData() {
-     const pageTitle = "{{ page.title | escape }}";
-    const pageModified = "{{page.modified}}";
+     
     fetch('https://jsonbase.gd972446.workers.dev/all')
       .then(response => response.json())
       .then(data => {
