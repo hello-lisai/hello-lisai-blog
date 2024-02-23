@@ -74,9 +74,13 @@ layout: compress
         </div>
         
 <script>
-  const articleBody = document.querySelector('.page-content');
-  const helloWorldText = document.createTextNode('Hello, World!');
-  articleBody.appendChild(helloWorldText);
+  document.addEventListener('DOMContentLoaded', function () {
+    const articleContent = document.querySelector('.page-content');
+    const articleTitle = document.querySelector('h1').innerText;
+    const greeting = document.createElement('p');
+    greeting.innerText = '你好，' + articleTitle;
+    articleContent.appendChild(greeting);
+  });
 </script>
 
 
