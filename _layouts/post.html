@@ -72,15 +72,22 @@ layout: compress
           </p>
           {% endif %}
         </div>
+ <button onclick="fetchData()">Fetch Data</button>
+<p id="output"></p>       
         
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const articleContent = document.querySelector('.page-content');
-    const articleTitle = document.querySelector('h1').innerText;
-    const greeting = document.createElement('p');
-    greeting.innerText = '你好，' + articleTitle;
-    articleContent.appendChild(greeting);
-  });
+  function fetchData() {
+    fetch('https://jsonbase.gd972446.workers.dev/all')
+      .then(response => response.json())
+      .then(data => {
+        console.log('读取到的所有数据：', data);
+        document.getElementById('output').innerText = '读取到的所有数据： ' + JSON.stringify(data);
+      })
+      .catch(error => {
+        console.error('读取数据时出错：', error);
+        document.getElementById('output').innerText = '读取数据时出错： ' + error;
+      });
+  }
 </script>
 
 
