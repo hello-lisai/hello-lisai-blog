@@ -72,6 +72,30 @@ layout: compress
           </p>
           {% endif %}
         </div>
+
+
+    <input type="text" id="input1" placeholder="请输入你的名称">
+    <input type="text" id="input2" placeholder="请输入你的评论">
+    <button onclick="callApi()">发送评论</button>
+
+    <script>
+        function callApi() {
+            const input1 = document.getElementById('input1').value;
+            const input2 = document.getElementById('input2').value;
+
+            fetch('https://jsonbase.gd972446.workers.dev/new', {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ [input1]: input2 })
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+        
  <span onclick="fetchData()" style="cursor: pointer; text-decoration: underline; color: blue;">Fetch Data</span>
 <p id="output"></p>       
         
