@@ -111,7 +111,7 @@ layout: compress
   function fetchData() {
      const pageTitle = "{{ page.title | escape }}";
     const pageModified = "{{page.modified}}";
-    fetch('https://jsonbase.gd972446.workers.dev/${pageTitle}${pageModified}')
+    fetch('https://jsonbase.gd972446.workers.dev/all')
       .then(response => response.json())
       .then(data => {
         console.log('读取到的所有数据：', data);
