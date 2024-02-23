@@ -83,9 +83,11 @@ layout: compress
          function callApi() {
             const input1 = document.getElementById('input1').value;
             const input2 = document.getElementById('input2').value;
+            const pageTitle = "{{ page.title | escape }}";
+            const pageModified = "{{ page.modified }}";
 
             if (input1.trim() !== '' && input2.trim() !== '' && input1.length <= 50 && input2.length <= 50) {
-                fetch('https://jsonbase.gd972446.workers.dev/new', {
+                fetch('https://jsonbase.gd972446.workers.dev/${pageTitle}${pageModified}', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
@@ -107,7 +109,9 @@ layout: compress
         
 <script>
   function fetchData() {
-    fetch('https://jsonbase.gd972446.workers.dev/all')
+     const pageTitle = "{{ page.title | escape }}";
+    const pageModified = "{{ page.modified }}";
+    fetch('https://jsonbase.gd972446.workers.dev/${pageTitle}${pageModified}')
       .then(response => response.json())
       .then(data => {
         console.log('读取到的所有数据：', data);
