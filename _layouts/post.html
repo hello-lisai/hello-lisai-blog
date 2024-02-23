@@ -135,7 +135,7 @@ layout: compress
     </main>
 
     {% if page.modified %}
-      <small class="post-updated-at">updated_at {{page.modified | date: "%d-%m-%Y"}}123456</small>
+      <small class="post-updated-at">updated_at {{page.modified | date: "%d-%m-%Y"}}{{page.id}}</small>
     {% endif %}
     {% if page.next or page.previous %}
       {% include navigation.html %}
