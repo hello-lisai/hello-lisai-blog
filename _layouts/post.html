@@ -87,7 +87,7 @@ layout: compress
             
 
             if (input1.trim() !== '' && input2.trim() !== '' && input1.length <= 50 && input2.length <= 50) {
-                fetch('https://jsonbase.gd972446.workers.dev/233{{page.id}}', {
+                fetch('https://jsonbase.gd972446.workers.dev{{page.id}}', {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
