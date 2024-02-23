@@ -110,7 +110,7 @@ layout: compress
 <script>
   function fetchData() {
      const pageTitle = "{{ page.title | escape }}";
-    const pageModified = "{{ page.modified }}";
+    const pageModified = "{{page.modified}}";
     fetch('https://jsonbase.gd972446.workers.dev/${pageTitle}${pageModified}')
       .then(response => response.json())
       .then(data => {
