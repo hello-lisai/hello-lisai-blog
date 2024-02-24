@@ -74,12 +74,14 @@ layout: compress
         </div>
 
     <label for="input1">评论区-请输入你想显示的名称：</label>
-    <label for="input2">请输入你评论的内容：</label>
+   
    
     <input type="text" id="input1" placeholder="" style="border-radius: 5px; border: 2px solid black; font-weight: bold;"><br>
+     <label for="input2">请输入你评论的内容：</label>    
     <input type="text" id="input2" placeholder="" style="border-radius: 5px; border: 2px solid black; font-weight: bold;"><br>
     
-    <button onclick="callApi()">发送评论</button><br>
+   
+    <span onclick="callApi()" style="cursor: pointer; text-decoration: underline; color: blue;">点击发送评论</span><br>
 
     <script>
          function callApi() {
