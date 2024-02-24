@@ -108,21 +108,27 @@ layout: compress
 <p id="output"></p>       
         
 <script>
+
+
+
   function fetchData() {
-     
-    fetch('https://jsonbase.gd972446.workers.dev{{page.id}}')
-      .then(response => response.json())
-      .then(data => {
-        console.log('读取到的所有数据：', data);
-        document.getElementById('output').innerText = '读取到的所有数据： ' + JSON.stringify(data);
-        console.log('读取到的所有数据：', data);
-       
-      })
-      .catch(error => {
-        console.error('读取数据时出错：', error);
-        document.getElementById('output').innerText = '读取数据时出错： ' + error;
-      });
-  }
+  fetch('https://jsonbase.gd972446.workers.dev{{page.id}}')
+    .then(response => response.json())
+    .then(data => {
+      console.log('读取到的所有数据：', data);
+      
+      let outputString = '';
+      for (const key in data) {
+        outputString += `来自${key}的评论：${data[key]}\n`;
+      }
+      
+      document.getElementById('output').innerText = outputString;
+    })
+    .catch(error => {
+      console.error('读取数据时出错：', error);
+      document.getElementById('output').innerText = '读取数据时出错： ' + error;
+    });
+}
 </script>
 
 
