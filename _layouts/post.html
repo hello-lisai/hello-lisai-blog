@@ -116,14 +116,11 @@ layout: compress
         console.log('读取到的所有数据：', data);
         document.getElementById('output').innerText = '读取到的所有数据： ' + JSON.stringify(data);
         console.log('读取到的所有数据：', data);
-        let formattedData = JSON.stringify(data)
-          .replace(/{"hi":"([^"]+)}/g, 'hi:$1\n')
-          .replace(/[{}\"]/g, '');
-        document.getElementById('output').innerText = '读取到的所有数据：\n' + formattedData;
+       
       })
       .catch(error => {
         console.error('读取数据时出错：', error);
-        //document.getElementById('output').innerText = '读取数据时出错： ' + error;
+        document.getElementById('output').innerText = '读取数据时出错： ' + error;
       });
   }
 </script>
