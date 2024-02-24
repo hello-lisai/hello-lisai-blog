@@ -112,21 +112,21 @@ layout: compress
 
 
 function fetchData() {
-     
-    fetch('https://jsonbase.gd972446.workers.dev{{page.id}}')
-      .then(response => response.json())
-      .then(data => {
-        console.log('读取到的所有数据：', data);
-        let formattedData = JSON.stringify(data)
-          .replace(/{"([^"]+)":"([^"]+)"}/g, '来自$1的评论：$2\n')
-          .replace(/[{}\"]/g, '');
-        document.getElementById('output').innerText = '读取到的所有数据：\n' + formattedData;
-        console.log('读取到的所有数据：', data);       
-      })
-      .catch(error => {
-        console.error('读取数据时出错：', error);
-        document.getElementById('output').innerText = '读取数据时出错： ' + error;
-      });
+  fetch('https://jsonbase.gd972446.workers.dev{{page.id}}')
+    .then(response => response.json())
+    .then(data => {
+      
+      let formattedData = JSON.stringify(data)
+        .replace(/\\([^\\]+)\\:\\([^\\]+)\\/g, '$1：$2\n')
+        .replace(/[\\"{}]/g, '');
+      
+      document.getElementById('output').innerText = formattedData;
+           
+    })
+    .catch(error => {
+      console.error('读取数据时出错：', error);
+      document.getElementById('output').innerText = '读取数据时出错： ' + error;
+    });
 }
 </script>
 
