@@ -117,7 +117,9 @@ function fetchData() {
       
          let formattedData = data
           .replace(/{/g, '')
-          .replace(/}/g, '\n');
+          .replace(/}/g, '\n')
+          .replace(", '');
+        
         document.getElementById('output').innerText = formattedData;
         console.log('读取到的所有数据：', data);
        
