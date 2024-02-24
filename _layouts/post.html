@@ -72,7 +72,7 @@ layout: compress
           </p>
           {% endif %}
         </div>
-     <label>评论区</label>
+     <label>评论区</label><br>
     <label for="input1">评论区-请输入你想显示的名称：</label>
    
    
@@ -87,7 +87,7 @@ layout: compress
          function callApi() {
             const input1 = document.getElementById('input1').value;
             const input2 = document.getElementById('input2').value;
-            
+            document.getElementById('output').innerText = "内容为空或内容过多"; 
             
 
             if (input1.trim() !== '' && input2.trim() !== '' && input1.length <= 50 && input2.length <= 50) {
@@ -104,6 +104,7 @@ layout: compress
                 .catch(error => console.error('Error:', error));
             } else {
                 console.error('输入框不能为空且输入字符不得超过50个');
+                document.getElementById('output').innerText = "内容为空或内容过多"; 
             }
         }
     </script>
