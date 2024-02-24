@@ -108,9 +108,6 @@ layout: compress
 <p id="output"></p>       
         
 <script>
-
-
-
 function fetchData() {
   fetch('https://jsonbase.gd972446.workers.dev{{page.id}}')
     .then(response => response.json())
@@ -118,7 +115,8 @@ function fetchData() {
       
       let formattedData = JSON.stringify(data)
         .replace(/\\([^\\]+)\\:\\([^\\]+)\\/g, '$1：$2\n')
-        .replace(/[\\"{}]/g, '');
+        .replace(/[\\"{}]/g, '')
+        .replace(/\n/g, '\n\n'); // Add an additional line break for each entry
       
       document.getElementById('output').innerText = formattedData;
            
@@ -128,6 +126,9 @@ function fetchData() {
       document.getElementById('output').innerText = '读取数据时出错： ' + error;
     });
 }
+
+
+
 </script>
 
 
