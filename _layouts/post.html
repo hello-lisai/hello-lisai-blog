@@ -78,7 +78,7 @@ layout: compress
     <input type="text" id="input1" style="background-color: transparent; color: inherit;"><br>
    
      <label for="input2">请输入你评论的内容：</label>    
-    <input type="text" id="input2" ><br>
+    <input type="text" id="input2" style="background-color: transparent; color: inherit;"><br>
        
     
    
@@ -116,12 +116,12 @@ layout: compress
 }
     </script>
         
- <span onclick="fetchData()" style="cursor: pointer; text-decoration: underline; color: blue;">Fetch Data</span>
+ <span onclick="fetchData()" style="cursor: pointer; text-decoration: underline; color: darkgoldenrod;">点击查看评论</span>
 <p id="output"></p>       
         
 <script>
 function fetchData() {
-     
+     document.getElementById('output').innerText = "正在获取评论";
     fetch('https://jsonbase.gd972446.workers.dev{{page.id}}')
       .then(response => response.json())
       .then(data => {
