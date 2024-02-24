@@ -84,29 +84,35 @@ layout: compress
     <span onclick="callApi()" style="cursor: pointer; text-decoration: underline; color: blue;">点击发送评论</span><br>
 
     <script>
-         function callApi() {
-            const input1 = document.getElementById('input1').value;
-            const input2 = document.getElementById('input2').value;
-            document.getElementById('output').innerText = "正在发送评论"; 
-            
+       function callApi() {
+    const input1 = document.getElementById('input1').value;
+    const input2 = document.getElementById('input2').value;
+    document.getElementById('output').innerText = "正在发送评论";
 
-            if (input1.trim() !== '' && input2.trim() !== '' && input1.length <= 50 && input2.length <= 50) {
-                fetch('https://jsonbase.gd972446.workers.dev{{page.id}}', {
-                    method: 'PUT',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    
-                    body: JSON.stringify({ [input1]: input2 })
-                })
-                .then(response => response.json())
-                .then(data => console.log(data))
-                .catch(error => console.error('Error:', error));
+    if (input1.trim() !== '' && input2.trim() !== '' && input1.length <= 50 && input2.length <= 50) {
+        fetch('https://jsonbase.gd972446.workers.dev{{page.id}}', {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ [input1]: input2 })
+        })
+        .then(response => {
+            if (response.ok) {
+                document.getElementById('output').innerText = "已成功发送评论";
             } else {
-                console.error('输入框不能为空且输入字符不得超过50个');
-                document.getElementById('output').innerText = "内容为空或内容过多"; 
+                throw new Error('发送失败');
             }
-        }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('output').innerText = "发送错误";
+        });
+    } else {
+        console.error('输入框不能为空且输入字符不得超过50个');
+        document.getElementById('output').innerText = "内容为空或内容过多";
+    }
+}
     </script>
         
  <span onclick="fetchData()" style="cursor: pointer; text-decoration: underline; color: blue;">Fetch Data</span>
