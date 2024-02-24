@@ -73,7 +73,7 @@ layout: compress
           {% endif %}
         </div>
      <label>评论区</label><br>
-    <label for="input1">评论区-请输入你想显示的名称：</label>
+    <label for="input1">请输入你想显示的名称：</label>
    
    
     <input type="text" id="input1" placeholder="" style="border-radius: 5px; border: 2px solid black; font-weight: bold;"><br>
@@ -87,7 +87,7 @@ layout: compress
          function callApi() {
             const input1 = document.getElementById('input1').value;
             const input2 = document.getElementById('input2').value;
-            document.getElementById('output').innerText = "内容为空或内容过多"; 
+            document.getElementById('output').innerText = "正在发送评论"; 
             
 
             if (input1.trim() !== '' && input2.trim() !== '' && input1.length <= 50 && input2.length <= 50) {
@@ -127,11 +127,12 @@ function fetchData() {
         
         document.getElementById('output').innerText = formattedData;
         console.log('读取到的所有数据：', data);
+        
        
       })
       .catch(error => {
         console.error('读取数据时出错：', error);
-        document.getElementById('output').innerText = '读取数据时出错： ' + error;
+        document.getElementById('output').innerText = '暂无评论或错误';
       });
 }
 </script>
