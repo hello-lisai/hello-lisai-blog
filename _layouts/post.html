@@ -109,19 +109,22 @@ layout: compress
         
 <script>
 function fetchData() {
-  fetch('https://jsonbase.gd972446.workers.dev{{page.id}}')
-    .then(response => response.json())
-    .then(data => {
-      let formattedData = '';
-      for (const key in data) {
-        formattedData += key + '：' + data[key] + '\n';
-      }
-      document.getElementById('output').innerText = formattedData;
-    })
-    .catch(error => {
-      console.error('读取数据时出错：', error);
-      document.getElementById('output').innerText = '读取数据时出错： ' + error;
-    });
+     
+    fetch('https://jsonbase.gd972446.workers.dev{{page.id}}')
+      .then(response => response.json())
+      .then(data => {
+        console.log('读取到的所有数据：', data);
+        let formattedData = JSON.stringify(data)
+          .replace(/{"([^"]+)":"([^"]+)"}/g, '$1: $2\n')
+          .replace(/[{}\"]/g, '');
+        document.getElementById('output').innerText = formattedData;
+        console.log('读取到的所有数据：', data);
+       
+      })
+      .catch(error => {
+        console.error('读取数据时出错：', error);
+        document.getElementById('output').innerText = '读取数据时出错： ' + error;
+      });
 }
 </script>
 
