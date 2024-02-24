@@ -116,6 +116,7 @@ function fetchData() {
         console.log('读取到的所有数据：', data);
       
          let formattedData = data
+          .replace(/"/g, '')
           .replace(/{/g, '')
           .replace(/}/g, '\n');
         
