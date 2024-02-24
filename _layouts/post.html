@@ -89,6 +89,7 @@ layout: compress
     const input1 = document.getElementById('input1').value;
     const input2 = document.getElementById('input2').value;
     document.getElementById('output').innerText = "正在发送评论";
+    document.getElementById('input2').value = '';     
 
     if (input1.trim() !== '' && input2.trim() !== '' && input1.length <= 50 && input2.length <= 50) {
         fetch('https://9.013145.xyz{{page.id}}', {
