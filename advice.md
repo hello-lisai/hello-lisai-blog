@@ -20,4 +20,20 @@ comments: false
 
 ### 以及无法提供的服务
 
-如果你想降低患肺癌的概率，办法只有戒烟，提供不了既要抽烟还要不得肺病的服务，这个问题不是钱的问题，也不是能力的问题。这不是享乐或者盈利的服务，主要目的是带来心理安慰和减轻心理压力，以及关于未来的推测，至于解决方案，就是平心接受或戒除恶习。如果你无法认可和接受，请另谋高就
+如果你想降低患肺癌的概率，办法只有戒烟，提供不了既要抽烟还要不得肺病的服务，这个问题不是钱的问题，也不是能力的问题。这不是享乐或者盈利的服务，主要目的是带来心理安慰和减轻心理压力，以及关于未来的推测，至于解决方案，就是平心接受或戒除恶习。如果你无法认可和接受，请另谋高就.
+<button onclick="copyText()">Copy Text</button>
+
+<script>
+    function copyText() {
+        const text = 'Your text to copy';
+        navigator.clipboard.writeText(text)
+            .then(() => {
+                console.log('Text copied to clipboard: ' + text);
+                alert('Text copied to clipboard: ' + text);
+            })
+            .catch(err => {
+                console.error('Failed to copy text: ', err);
+                alert('Failed to copy text. Please try again.');
+            });
+    }
+</script>
