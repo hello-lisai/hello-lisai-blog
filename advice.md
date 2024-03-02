@@ -25,7 +25,7 @@ comments: false
 
 ### 获取我的联系方式
 
-<span style="cursor: pointer; text-decoration: underline; color: blue;" onclick="copyText()">如果您已阅读并同意上述内容，请点击此处复制我的微信号</span>
+<span style="cursor: pointer; text-decoration: underline; color: purple;" onclick="copyText()">如果您已阅读并同意上述内容，请点击此处复制我的微信号</span>
 
 <script>
     function copyText() {
