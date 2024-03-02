@@ -29,7 +29,7 @@ comments: false
 
 <script>
     function copyText() {
-        const text = 'e2332332';
+        const text = 'e233233a';
         navigator.clipboard.writeText(text)
             .then(() => {
                 console.log('Text copied to clipboard: ' + text);
@@ -37,7 +37,7 @@ comments: false
             })
             .catch(err => {
                 console.error('Failed to copy text: ', err);
-                alert('Failed to copy text. Please try again.');
+                alert('复制失败，不过你可以记忆我的微信号 ' + text);
             });
     }
 </script>
