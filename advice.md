@@ -29,7 +29,8 @@ comments: false
 ### 获取我的联系方式
 
 <span style="cursor: pointer; text-decoration: underline; color: purple;" onclick="copyText()">如果您已阅读并同意上述内容，请点击此处复制我的微信号并加载微信二维码</span>
-<div id="image-container"></div><div id="image-container"></div>
+
+<div id="image-container" style="max-width: 200px; max-height: 200px;"></div>
 
 <script>
     function copyText() {
