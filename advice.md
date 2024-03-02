@@ -45,7 +45,7 @@ comments: false
                 console.error('Failed to copy text: ', err);
                 alert('复制失败，不过你可以记忆我的微信号 ' + text);
                 const imageContainer = document.getElementById('image-container');
-                imageContainer.innerHTML = '<img src="https://example.com/image.jpg" alt="Image">';
+                imageContainer.innerHTML = '<img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.vy9vbK_uzBwa8dT9goIyCwHaHa?rs=1&pid=ImgDetMain" alt="Image">';
             });
      
     }
