@@ -1,6 +1,6 @@
 ---
 title: 咨询服务
-permalink: /advice/
+permalink: /advic/
 layout: page
 excerpt: 你好。
 comments: false
