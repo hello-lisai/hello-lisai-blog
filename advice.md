@@ -38,7 +38,7 @@ comments: false
             .then(() => {
                 console.log('Text copied to clipboard: ' + text);
              const imageContainer = document.getElementById('image-container');
-                imageContainer.innerHTML = '<img src="https://example.com/image.jpg" alt="Image">';
+                imageContainer.innerHTML = '<img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.vy9vbK_uzBwa8dT9goIyCwHaHa?rs=1&pid=ImgDetMain" alt="Image">';
                 alert('已成功复制我的微信号: ' + text);
             })
             .catch(err => {
