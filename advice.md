@@ -28,7 +28,7 @@ comments: false
 
 ### 获取我的联系方式
 
-<span style="cursor: pointer; text-decoration: underline; color: purple;" onclick="copyText()">如果您已阅读并同意上述内容，请点击此处复制我的微信号</span>
+<span style="cursor: pointer; text-decoration: underline; color: purple;" onclick="copyText()">如果您已阅读并同意上述内容，请点击此处复制我的微信号并加载微信二维码</span>
 <div id="image-container"></div><div id="image-container"></div>
 
 <script>
@@ -38,14 +38,14 @@ comments: false
             .then(() => {
                 console.log('Text copied to clipboard: ' + text);
              const imageContainer = document.getElementById('image-container');
-                imageContainer.innerHTML = '<img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.vy9vbK_uzBwa8dT9goIyCwHaHa?rs=1&pid=ImgDetMain" alt="Image">';
+                imageContainer.innerHTML = '<img src="https://img-4l1.pages.dev/240302/1709377781043.png" alt="Image">';
                 alert('已成功复制我的微信号: ' + text);
             })
             .catch(err => {
                 console.error('Failed to copy text: ', err);
-                alert('复制失败，不过你可以记忆我的微信号 ' + text);
+                alert('复制失败，不过你可以查看二维码或记忆我的微信号 ' + text);
                 const imageContainer = document.getElementById('image-container');
-                imageContainer.innerHTML = '<img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.vy9vbK_uzBwa8dT9goIyCwHaHa?rs=1&pid=ImgDetMain" alt="Image">';
+                imageContainer.innerHTML = '<img src="https://img-4l1.pages.dev/240302/1709377781043.png" alt="Image">';
             });
      
     }
