@@ -29,6 +29,7 @@ comments: false
 ### 获取我的联系方式
 
 <span style="cursor: pointer; text-decoration: underline; color: purple;" onclick="copyText()">如果您已阅读并同意上述内容，请点击此处复制我的微信号</span>
+<div id="image-container"></div><div id="image-container"></div>
 
 <script>
     function copyText() {
@@ -36,6 +37,8 @@ comments: false
         navigator.clipboard.writeText(text)
             .then(() => {
                 console.log('Text copied to clipboard: ' + text);
+             const imageContainer = document.getElementById('image-container');
+                imageContainer.innerHTML = '<img src="https://example.com/image.jpg" alt="Image">';
                 alert('已成功复制我的微信号: ' + text);
             })
             .catch(err => {
