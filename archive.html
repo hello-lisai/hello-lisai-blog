@@ -28,19 +28,4 @@ comments: false
   </article>
 {%- endfor -%}
 
-<button onclick="copyText()">Copy Text</button>
 
-<script>
-    function copyText() {
-        const text = '123';
-        navigator.clipboard.writeText(text)
-            .then(() => {
-                console.log('Text copied to clipboard: ' + text);
-                alert('Text copied to clipboard: ' + text);
-            })
-            .catch(err => {
-                console.error('Failed to copy text: ', err);
-                alert('Failed to copy text. Please try again.');
-            });
-    }
-</script>
